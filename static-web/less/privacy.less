@@ -1,0 +1,548 @@
+@import "_common";
+@import "_variables";
+@import "http://www.mulinobianco.it//mb-default-theme/css/sitofonts.css";
+
+#fp-loader {
+  background-image: url('../img/mb_loader.gif');
+  background-color: rgba(255, 255, 255, 0.8);
+  background-position: center center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  position: fixed;
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0
+}
+
+.header {
+  background-color: #5e2300;
+  text-align: center;
+  position: relative;
+  z-index: 1000;
+  height: 60px;
+  width: 100%
+}
+
+.header .logo {
+  background-image: url("../img/logo_mb_little.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  background-size: 75px;
+  height: 100%;
+  width: 150px
+}
+
+@media (max-width: 767px) {
+  .header {
+    height: 64px
+  }
+
+  .header .logo {
+    margin: 7px auto;
+    height: 50px
+  }
+}
+
+.footer {
+  background: url("../img/footer-bg.jpg");
+  background-repeat-y: no-repeat;
+  box-sizing: border-box;
+  padding-top: 75px;
+  height: 300px;
+  width: 100%
+}
+
+.footer .logo-seppia {
+  background-image: url("../img/img_logo_seppia.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: block;
+  margin: 0 auto;
+  width: 132px;
+  height: 66px
+}
+
+.footer .pp {
+  font-size: 12px;
+  color: #5f2c0a;
+  text-align: center;
+  margin: 15px
+}
+
+.footer .pp a {
+  color: #127cbf;
+  text-decoration: none
+}
+
+@media (max-width: 960px) {
+  .footer {
+    height: 200px
+  }
+}
+
+@font-face {
+  font-family: 'BodoniSvtyTwoITCTT-BookIta';
+  src: url('../fonts/bodoni-svtytwo-itc-tt-bookita-58c819ce006a6.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'BodoniOldFaceBE-Regular';
+  src: url('../fonts/Bodoni Old Face BE Regular.ttf') format('truetype')
+}
+
+body {
+  background-image: url("../img/bg.jpg");
+  font-family: 'HelveticaNeueW01-65Medi';
+  background-position: center top;
+  margin: 0
+}
+
+.window {
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 50px auto 33px;
+  height: 400px
+}
+
+.mb-button {
+  font-family: 'HelveticaNeueW01-75Bold';
+  border: 1px solid #127cbf;
+  box-sizing: border-box;
+  text-decoration: none;
+  display: inline-block;
+  background: #127cbf;
+  border-radius: 6px;
+  text-shadow: none;
+  padding: 6px 41px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #FFF;
+  text-align: center;
+  width: auto;
+  margin: 0 auto 40px auto
+}
+
+.mb-button.white {
+  background: #fff;
+  color: #127cbf
+}
+
+.mb-button.disabled {
+  pointer-events: none;
+  opacity: 0.8
+}
+
+.content-wrapper {
+  box-shadow: 0 3px 5px 0 #998579;
+  background-color: white;
+  margin: 0 auto 50px;
+  position: relative;
+  max-width: 960px;
+  width: 100%
+}
+
+.content-wrapper.hidden {
+  position: absolute;
+  visibility: hidden;
+  overflow: hidden;
+  opacity: 0;
+  height: 0
+}
+
+.content-wrapper .heading {
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 55px;
+  height: 120px;
+  width: 100%
+}
+
+.content-wrapper .buttons-ctr {
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 34px auto;
+  max-width: 570px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%
+}
+
+.content-wrapper .mb-button {
+  font-family: 'HelveticaNeueW01-75Bold';
+  border: 1px solid #127cbf;
+  box-sizing: border-box;
+  text-decoration: none;
+  display: inline-block;
+  background: #127cbf;
+  border-radius: 6px;
+  text-align: center;
+  text-shadow: none;
+  padding: 6px 41px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #FFF;
+  width: auto;
+  margin: 0
+}
+
+.content-wrapper .mb-button.white {
+  background: #fff;
+  color: #127cbf
+}
+
+.content-wrapper .mb-button.disabled {
+  pointer-events: none;
+  opacity: 0.8
+}
+
+.content-wrapper .search {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 15px 45px;
+  color: #5e2300;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex
+}
+
+.content-wrapper .search .title {
+  font-family: 'HelveticaNeueW01-65Medi';
+  margin: 18px 0 37px;
+  font-size: 18px
+}
+
+.content-wrapper .search .form-container {
+  box-sizing: border-box;
+  padding-bottom: 38px;
+  padding-left: 72px;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1
+}
+
+.content-wrapper .search .form-container .formCell {
+  margin: 25px 0 0
+}
+
+.content-wrapper .search .form-container .formCell select {
+  font-family: 'HelveticaNeueW01-45Ligh';
+  display: block;
+  box-sizing: border-box;
+  width: 310px;
+  font-size: 15px;
+  padding: 0 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  -moz-text-align-last: center;
+  text-align-last: center;
+  text-align: center;
+  height: 26px;
+  background-color: #fdfcf9;
+  border: 1px solid #d5c8be;
+  border-radius: 6px;
+  color: #5f1f00
+}
+
+.content-wrapper .list {
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  position: relative;
+  max-width: 850px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%
+}
+
+.content-wrapper .list.hidden {
+  display: none
+}
+
+.content-wrapper .list .element {
+  font-family: 'HelveticaNeueW01-65Medi';
+  margin-bottom: 24px;
+  color: #5e2300;
+  font-size: 14px;
+  width: 30%
+}
+
+.content-wrapper .list .element .title {
+  font-family: 'HelveticaNeueW01-75Bold';
+  color: #c0834b;
+  margin: 8px 0 0;
+  font-size: 16px
+}
+
+.content-wrapper .list .element .address {
+  text-transform: uppercase;
+  line-height: 19px;
+  margin: 2px 0 0
+}
+
+.content-wrapper .list .element .main-text {
+  line-height: 19px;
+  margin: 4px 0 0
+}
+
+.content-wrapper .list .element .subtitle {
+  font-family: 'HelveticaNeueW01-75Bold';
+  margin: 9px 0 0
+}
+
+.content-wrapper .list .element .dates {
+  line-height: 18px;
+  margin: 2px 0 0;
+  display: block
+}
+
+.content-wrapper .list .disclaimer {
+  font-family: 'HelveticaNeueW01-75Bold';
+  margin: 49px auto 35px;
+  color: #c0834b;
+  text-align: center;
+  font-size: 14px;
+  width: 100%
+}
+
+.content-wrapper .map-cnt {
+  box-sizing: border-box;
+  padding: 0 40px 40px;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  opacity: 0;
+  bottom: 0
+}
+
+.content-wrapper .map-cnt.visible {
+  position: relative;
+  bottom: auto;
+  z-index: 1;
+  opacity: 1
+}
+
+.content-wrapper .map-cnt #result-map {
+  height: 350px;
+  width: 100%
+}
+
+.content-wrapper .separator {
+  border-top: 1px solid #c0834b;
+  margin: 16px auto 0;
+  max-width: 600px;
+  width: 100%
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    position: relative;
+    margin: 0 15px
+  }
+
+  .window {
+    background-size: contain;
+    margin: 5px auto;
+    max-width: 100%;
+    height: 135px
+  }
+
+  .content-wrapper .heading {
+    background-size: contain;
+    margin: 0 auto;
+    max-width: 85%
+  }
+
+  .content-wrapper .separator {
+    width: 90%
+  }
+
+  .content-wrapper .buttons-ctr {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0 10px
+  }
+
+  .content-wrapper .buttons-ctr .mb-button {
+    margin-bottom: 15px;
+    width: 100%
+  }
+
+  .content-wrapper .search {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 30px 0 15px
+  }
+
+  .content-wrapper .search .form-container {
+    padding: 0 10px;
+    width: 100%
+  }
+
+  .content-wrapper .search .form-container .formCell {
+    text-align: center
+  }
+
+  .content-wrapper .search .form-container .formCell select {
+    width: 100%
+  }
+
+  .content-wrapper .list {
+    box-sizing: border-box;
+    padding: 0 10px
+  }
+
+  .content-wrapper .list .element {
+    width: 100%
+  }
+
+  .content-wrapper .list .disclaimer {
+    margin: 15px auto 35px
+  }
+}
+
+#regulation {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: auto;
+  font-family: "HelveticaNeueW01-65Medi";
+  font-weight: normal;
+  color: #5f2c0a;
+  font-size: 15px
+}
+
+#regulation b, #regulation strong {
+  font-weight: bold
+}
+
+#regulation a {
+  color: #127cbf;
+  text-decoration: none;
+  word-break: break-all
+}
+
+#regulation hr {
+  border-bottom: 1px solid #5f2c0a;
+  border-top: none;
+  margin: 30px 0 20px
+}
+
+#regulation h1, #regulation h2, #regulation h3, #regulation h4, #regulation h5, #regulation h6 {
+  font-family: "Rockwell W02 Bold";
+  font-weight: normal
+}
+
+#regulation h1 {
+  font-size: 32px
+}
+
+#regulation h2 {
+  font-size: 24px
+}
+
+#regulation h3 {
+  font-size: 18px;
+  margin: 30px 0 20px
+}
+
+#regulation h4 {
+  font-size: 16px;
+  margin: 20px 0 10px
+}
+
+#regulation table {
+  margin: 20px auto 10px;
+  border: 1px solid #5f2c0a
+}
+
+#regulation td, #regulation th {
+  border: 1px solid #5f2c0a
+}
+
+#regulation .clear {
+  clear: both
+}
+
+@media (max-width: 960px) {
+  #regulation {
+    padding: 0 20px;
+    box-sizing: border-box
+  }
+
+  #regulation h1 {
+    font-size: 26px
+  }
+
+  #regulation h2 {
+    font-size: 22px
+  }
+
+  #regulation ol, #regulation ul {
+    padding-left: 20px
+  }
+
+  #regulation blockquote {
+    margin-left: 20px;
+    margin-right: 20px
+  }
+
+  #regulation table {
+    width: 100% !important
+  }
+
+  #regulation table td, #regulation table th {
+    width: auto !important;
+    font-size: 12px
+  }
+}
+
+@media (max-width: 767px) {
+  #regulation h1 {
+    font-size: 22px
+  }
+
+  #regulation h2 {
+    font-size: 18px
+  }
+
+  #regulation h3 {
+    font-size: 16px
+  }
+
+  #regulation h4 {
+    font-size: 14px
+  }
+
+  #regulation table td, #regulation table th {
+    font-size: 12px
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

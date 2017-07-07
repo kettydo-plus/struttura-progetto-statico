@@ -1,0 +1,29 @@
+.cookieBar {
+  position: fixed;
+  z-index: 1002;
+  background: rgba(81,41,29,.98);
+  width: 100%;
+  color: #fff;
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  &__text {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: ~"calc(100% - 30px)";
+
+  }
+  &__button-accept {
+    display: inline-block;
+    vertical-align: middle;
+
+    color: #000;
+    text-decoration: none;
+    background: url(../img/ics-close.png) center no-repeat;
+    background-size: contain;
+    width: 22px;
+    height: 22px;
+    border-radius: 3px;
+  }
+}

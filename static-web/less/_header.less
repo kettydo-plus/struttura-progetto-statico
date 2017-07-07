@@ -1,0 +1,31 @@
+@import "_variables";
+
+.header {
+  background-color: @mb-brown;
+  text-align: center;
+  position: relative;
+  z-index: 1000;
+  height: 60px;
+  width: 100%;
+
+  .logo {
+    background-image: url("../img/logo_mb_little.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: inline-block;
+    background-size: 75px;
+    height: 100%;
+    width: 150px;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    height: 64px;
+
+    .logo {
+      margin: 7px auto;
+      height: 50px;
+    }
+  }
+}

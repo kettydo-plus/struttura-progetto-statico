@@ -1,0 +1,33 @@
+{
+  "name": "mb-kids3-fe",
+  "scripts": {
+    "create-pages": "node ./grunt-tasks/scripts/create-pages.js",
+    "filerev": "node ./grunt-tasks/scripts/filerev.js",
+    "build": "npm run create-pages && npm run filerev"
+  },
+  "dependencies": {
+    "angular": "^1.6.5",
+
+    "requirejs": "^2.3.3"
+  },
+  "devDependencies": {
+    "convert-source-map": "^1.5.0",
+    "each-async": "^1.1.1",
+    "glob": "^7.1.2",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.0",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-requirejs": "^1.0.0",
+    "handlebars": "^4.0.10",
+    "handlebars-delimiters": "^0.1.2",
+    "i": "^0.3.5",
+    "less-plugin-autoprefix": "^1.5.1",
+    "load-grunt-config": "^0.19.2",
+    "mkdirp": "^0.5.1",
+    "mustache": "^2.3.0",
+    "rimraf": "^2.6.1",
+    "slash": "^1.0.0"
+  }
+}

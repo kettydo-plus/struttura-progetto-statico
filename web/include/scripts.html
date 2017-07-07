@@ -1,0 +1,6 @@
+[[#if production]]
+<script src="[[js_name_production]]" async></script>
+[[else]]
+<script src="[[js_name_production]]" async></script>
+<script src="js/libs/require.js" data-main="js/config.js" async></script>
+[[/if]]
